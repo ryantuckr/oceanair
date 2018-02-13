@@ -2932,8 +2932,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-color: white;
+    background-image: url("../images/paddlebg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;
