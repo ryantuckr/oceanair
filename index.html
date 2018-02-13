@@ -386,7 +386,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-2 display-2--light">Contact us or Start a New Reservation</h1>
+                <h1 class="display-2 display-2--light">Start your Reservation</h1>
             </div>
         </div>
 
@@ -398,19 +398,63 @@
 
                 <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
                     <fieldset>
-    
+                    <!-- input name-->
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="reservationName" type="text" id="ReservationName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
+                    
+                    <!-- input email-->
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        <input name="reservationEmail" type="email" id="reservationEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
                     </div>
+                    
+                    <!-- input phone-->
                     <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        <input name="reservationPhone" type="text" id="reservationPhone" placeholder="Your Phone" value="" required="" aria-required="true" class="full-width">
                     </div>
+                    
+                    <!-- input beach-->
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <input name="reservationBeach" type="text" placeholder="Beach Destination" value="" required="" aria-required="true" class="full-width">
+                        <select class="form-control" id="reservationBeach">
+                        <option> --Select Beach from dropdown-- </option>
+                        <option>Cocoa Beach</option>
+                        <option>Daytona Beach</option>
+                        <option>Denstin</option>
+                        <option>Key West</option>
+                        <option>Miami Beach</option>
+                        <option>New Smyrna Beach</option>
+                        <option>Panama City Beach</option>
+                        <option>Pensacola Beach</option>
+                        <option>Sanibel Island</option>
+                        <option>Siesta Key</option>
+                        <option>St Augustine</option>
+                        <option>St George Island</option>
+                        <option>St Pete</option>
+                        <option>Vero Beach</option>
+                    </select>
                     </div>
+                    
+                    <!-- input units-->
+                    <div class="form-field">
+                        <input name="reservationUnits" type="text" id="reservationUnits" placeholder="Rental #" value="" class="full-width">
+                        <select class="form-control" id="reservationUnits">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+               
+                    <div class="form-field">
+                        <input name="reservationDate" type="date" id="reservationDate" placeholder="Reservation Date" value="" required="" aria-required="true" class="full-width">
+                    </div>
+
+                    <div class="form-field">
+                        <input name="reservationHours" type="text" id="reservationHours" placeholder="Rental Hours" value="" required="" aria-required="true" class="full-width">
+                    </div>
+
                     <div class="form-field">
                         <button class="full-width btn--primary">Submit</button>
                         <div class="submit-loader">
@@ -422,6 +466,7 @@
                             </div>
                         </div>
                     </div>
+                   
     
                     </fieldset>
                 </form>
