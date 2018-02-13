@@ -415,9 +415,8 @@
                     
                     <!-- input beach-->
                     <div class="form-field">
-                        <input name="reservationBeach" type="text" placeholder="Beach Destination" value="" required="" aria-required="true" class="full-width">
-                        <select class="form-control" id="reservationBeach">
-                        <option> --Select Beach from dropdown-- </option>
+                        <select class="form-field" name= "reservationBeach" id="reservationBeach" placeholder="Beach Destination" value="Beach Destination" required="" aria-required="true" class="full-width">>
+                        <option>Beach Location </option>
                         <option>Cocoa Beach</option>
                         <option>Daytona Beach</option>
                         <option>Denstin</option>
@@ -437,8 +436,8 @@
                     
                     <!-- input units-->
                     <div class="form-field">
-                        <input name="reservationUnits" type="text" id="reservationUnits" placeholder="Rental #" value="" class="full-width">
-                        <select class="form-control" id="reservationUnits">
+                        <select class="form-field" id="reservationUnits" name="reservationUnits" type="text" id="reservationUnits" placeholder="Rental Units" value="" class="full-width">
+                            <option>Rental Units</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -447,13 +446,24 @@
                         </select>
                     </div>
                
+                    <!-- input rental hours-->
+                    <div class="form-field">
+                        <select class="form-field" id="reservationHours" name="reservationHours" type="text" id="reservationHours" placeholder="Rental Hours" value="" class="full-width">
+                            <option>Rental Units</option>
+                            <option>2 Hours</option>
+                            <option>4 Hours</option>
+                            <option>All Day</option>
+                            
+                        </select>
+                    </div>
+
+
+                    <!-- input rental date-->
                     <div class="form-field">
                         <input name="reservationDate" type="date" id="reservationDate" placeholder="Reservation Date" value="" required="" aria-required="true" class="full-width">
                     </div>
 
-                    <div class="form-field">
-                        <input name="reservationHours" type="text" id="reservationHours" placeholder="Rental Hours" value="" required="" aria-required="true" class="full-width">
-                    </div>
+                    
 
                     <div class="form-field">
                         <button class="full-width btn--primary">Submit</button>
